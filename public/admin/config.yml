@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: KartDavat/kd-blog # Replace with your GitHub repository name
+  branch: main # Your GitHub branch (usually 'main' or 'master')
+
+media_folder: 'public/uploads' # Where media files will be stored
+public_folder: '/uploads' # URL path for media files
+
+collections:
+  - name: 'blog' # Name of the collection
+    label: 'Blog Posts' # Label for DecapCMS interface
+    folder: 'content/blog' # Folder for markdown files
+    create: true # Allow creating new posts via CMS
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' # URL format for blog posts
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' } # Title field
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' } # Date field
+      - { label: 'Body', name: 'body', widget: 'markdown' } # Body field (markdown)
+      - { label: 'Image', name: 'image', widget: 'image' } # Image upload field
