@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: KartDavat/kd-blog # Replace with your GitHub repository name
+  repo: smarzism/kd-blog # Replace with your GitHub repository name
   branch: main # Your GitHub branch (usually 'main' or 'master')
 
 media_folder: 'public/uploads' # Where media files will be stored
